@@ -8,12 +8,17 @@ il valore di argv[1] sarà "tutti_i_miei_comandi.txt"
 #include <string.h>
 
 int main(int argc, char *argv[]) {											//commento
-	char nome_file[30];
+				/*char nome_file[30];*/
 	char riga_corrente[80];
 	FILE *fh;
 																			//char *pch;
-	strcpy(nome_file, argv[1]);
-	fh=fopen(nome_file, "r");
+				/*strcpy(nome_file, argv[1]);*/
+	if(argc<2){
+		printf("Passare il nome file come argomento\n");
+		exit(-1);
+	}
+	fh=fopen(argv[1], "r");
+				/*fh=fopen(nome_file, "r");*/
 	while (fgets(riga_corrente,sizeof(riga_corrente),fh) != NULL){			// pch=fgets(riga_co}rrente,sizeof(riga_corrente),fh);
 		printf("%s", &(riga_corrente[9]));					//& e 9 - dammi l'indirizzo del carattere con l'avanzamento									//if (pch==NULL) 
 	}									
