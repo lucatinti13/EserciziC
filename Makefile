@@ -6,4 +6,3 @@ elabora.o : elabora.c
 
 install : elabora
 	cp elabora ..
-	
