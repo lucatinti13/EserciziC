@@ -1,0 +1,35 @@
+0 1 2 3 4 5 6 7 8 9 A  B   C  D  E  F
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+
+1*1 + 4*8 + 1*64 = 0097 / 16 = 96  1 = 61
+
+2*1 + 4* 8 + 3 *64 = 226 / 16 = 14  2 = e2
+
+2*1 + 2*64 = 130 = 82
+
+4*1 + 5*8 + 2*64 = 172 = AC
+
+E282AC
+
+
+
+3  4  2  |2  0  2  |2  5  4  |
+011100010|010000010|010101100|
+ 11100010| 10000010| 10101100|
+1110-0010|1000-0010|1010-1100|
+14  -2   |8   -2   |10  -12  |
+E   -2   |8   -2   |A   -C   |
+
+
+0) Apro il file tutti_i_miei_comandi.txt
+1) Verifico se sono alla fine del file o meno
+	  /		\
+  	 /	         \
+	SI		 NO
+	Esco		Procedo con l'istruzione 2)
+
+
+2) Leggo la riga corrente in una variabile stringa
+3) Copio il contenuto della stringa a partire dalla posizione 9
+4) Stampo il contenuto estratto
+5) Ritorno alla posizione 1)
