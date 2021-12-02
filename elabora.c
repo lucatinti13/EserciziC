@@ -6,6 +6,8 @@ il valore di argv[1] sarà "tutti_i_miei_comandi.txt"
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+
 
 int main(int argc, char *argv[]) {											//commento
 				/*char nome_file[30];*/
