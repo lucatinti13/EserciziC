@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {											//commento
 	strcpy(nome_file, argv[1]);
 	fh=fopen(nome_file, "r");
 	while (fgets(riga_corrente,sizeof(riga_corrente),fh) != NULL){			// pch=fgets(riga_co}rrente,sizeof(riga_corrente),fh);
-		printf("%s", riga_corrente);										//if (pch==NULL) 
+		printf("%s", &(riga_corrente[9]));					//& e 9 - dammi l'indirizzo del carattere con l'avanzamento									//if (pch==NULL) 
 	}									
 	fclose(fh);								
 																		
