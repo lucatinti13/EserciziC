@@ -23,7 +23,8 @@ int main(int argc, char *argv[]) {											//commento
 		printf("%s", &(riga_corrente[9]));					//& e 9 - dammi l'indirizzo del carattere con l'avanzamento									//if (pch==NULL) 
 	}									
 	fclose(fh);								
-																		
+	
+	return(0);	
 			
 }
 
